@@ -2,6 +2,11 @@
 
 namespace App;
 
+/**
+ * Interface CheckoutInterface
+ *
+ * @package App
+ */
 interface CheckoutInterface
 {
     /**
@@ -17,4 +22,8 @@ interface CheckoutInterface
      * @return int
      */
     public function total(): int;
+	public function addToBasket(SKU $sku);
+
+	
+
 }
